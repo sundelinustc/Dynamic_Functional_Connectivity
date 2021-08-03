@@ -1,6 +1,9 @@
 # Dynamic_Functional_Connectivity
+![alt text](https://github.com/sundelinustc/Dynamic_Functional_Connectivity/blob/main/Figure1.png?raw=true)
+
 ## Introduction
 Posttraumatic stress disorder (PTSD) is associated with abnormal static resting-state functional connectivity (rsFC), especially in the amygdala, hippocampus, anterior cingulate cortex (ACC) and medial prefrontal cortex (mPFC). However, little is known about PTSD-related dynamic changes in functional connectivity. We hypothesize that patients with PTSD is associated with reduced temporal variability of functional connectivity than trauma-exposed controls based on compromised abilities of PTSD patients to dynamically adjust behaviors and thoughts to changing conditions and a preoccupation with trauma-related experiences. We will compare patients with PTSD (N~=1500) to trauma-exposed controls (N~=1500) from ENIGMA-PGC PTSD project on dynamic rsFC based on the standard deviations in rsFC of amygdala, hippocampus and mPFC over a series of sliding windows. The proposed research may advance knowledge of fluctuating communications among brain systems in PTSD. 
+![alt text](https://github.com/sundelinustc/Dynamic_Functional_Connectivity/blob/main/Figure3.png?raw=true)
 
 ## A easy way to run DynamicBC in BIAC cluster
 The DynamicBC software is very good in analyses of dynamic resting-state functional data. Its Matlab GUI style makes it easy to set up parameters, but is difficult to run analyses in BIAC cluster. In other words, our current analyses are time-consuming because they are often based on data from thousands of subjects. We do not want to keep the DynamicBC GUI on the screen for several hours and even days -- any disconnection from the BIAC cluster will stop the whole process. We prefer to submitting a job script and wait for an email telling us that all have been done.
