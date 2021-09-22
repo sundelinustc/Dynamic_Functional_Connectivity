@@ -10,3 +10,6 @@ The DynamicBC software is very good in analyses of dynamic resting-state functio
 
 A much easier way is to use DynamicBC GUI to set up parameters, and then submit a Matlab job script to BIAC cluster. To do that, 1) open DynamicBC GUI from Matlab in your local PC; 2) set up parameters and run on a sample data (maybe just one subject) to test the validity of the parameters; 3) set a debug point at line#1061 and re-run the GUI, save the structure "F" into a parameters.mat file; 4) modify the SDL_DynamicBC_Seed2Voxel.m to input your own data input directory, output directory, seed mask image, and the F structure you just saved; 5) Let the BIAC cluster to complete the rest work.
 ![alt text](https://github.com/sundelinustc/Dynamic_Functional_Connectivity/blob/main/Figure2.png?raw=true)
+
+## QC of Images
+QC of the brain images during the analyses should be carefully checked to avoid weird outputs. A Python script called SDL_QC_pngs.py is ued to make the snapshots (.png files) of the 3 views (axial, coronal and sagittal; x=0, y=0, z=0) of 3D brain images. The number of images is huge for big project. It is better to compress the folder of QC images in linux (BIAC cluster environment) and uncompress it in your own PC. Here is the linux command to compress the folder: "zip -9 -y -r -q QC.zip QC/".
